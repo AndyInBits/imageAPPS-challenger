@@ -1,0 +1,222 @@
+{
+	"info": {
+		"_postman_id": "34af8930-4081-4334-80da-35f546f9b688",
+		"name": "CHALLENGER IMAGEAPPS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4845256",
+		"_collection_link": "https://peikyapi.postman.co/workspace/93fd4d5d-2df1-4f1a-99b2-dbced87e3f9f/collection/4845256-34af8930-4081-4334-80da-35f546f9b688?action=share&source=collection_link&creator=4845256"
+	},
+	"item": [
+		{
+			"name": "HEALTCHECK",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/logistics/healthcheck",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"logistics",
+						"healthcheck"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List all packages",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/logistics/packages/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"logistics",
+						"packages",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List all packages by client",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/logistics/client/1/packages/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"logistics",
+						"client",
+						"1",
+						"packages",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List all packages by carrier",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/logistics/carrier/1/packages/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"logistics",
+						"carrier",
+						"1",
+						"packages",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create a package",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/logistics/package/create/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"logistics",
+						"package",
+						"create",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update a package",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/logistics/package/5/edit/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"logistics",
+						"package",
+						"5",
+						"edit",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete a package",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/logistics/package/5/delete/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"logistics",
+						"package",
+						"5",
+						"delete",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Package detail",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/logistics/package/5/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"logistics",
+						"package",
+						"5",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Asing a package to a carrier",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"package_id\": 5\n}",
+					"options": {
+						"raw": {
+							"language": "text"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/logistics/api/assign_carrier/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"logistics",
+						"api",
+						"assign_carrier",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

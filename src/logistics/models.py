@@ -1,5 +1,7 @@
 from django.db import models
+
 from utils.models import CommonModel
+
 
 class Client(CommonModel):
     name = models.CharField(max_length=120)

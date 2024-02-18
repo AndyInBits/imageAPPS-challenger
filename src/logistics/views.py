@@ -1,11 +1,13 @@
+import random
+
+from django.shortcuts import get_object_or_404, redirect, render
+from django.views import View
 from rest_framework import status
 from rest_framework.response import Response
 from rest_framework.views import APIView
-from django.shortcuts import render, redirect, get_object_or_404
-from django.views import View
-from .models import Package, Carrier, Client
+
 from .form import PackageForm
-import random
+from .models import Carrier, Client, Package
 from .serializers import PackageSerializer
 
 
