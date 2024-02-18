@@ -1,7 +1,7 @@
 version: "3"
 
 services:
-  api:
+  web:
     build:
       context: ./
       dockerfile: Dockerfile
@@ -11,7 +11,7 @@ services:
     env_file: .env
     ports:
       - "8000:8000"
-  db:
+  database:
     image: postgres:14.1-alpine
     restart: always
     env_file: .env
