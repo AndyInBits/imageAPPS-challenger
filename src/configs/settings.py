@@ -48,7 +48,7 @@ CORS_ALLOW_CREDENTIALS = False
 
 # Application definition
 
-INSTALLED_APPS = [
+DJANGO_APPS = [
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
@@ -56,6 +56,16 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
 ]
+# others apps
+THIRD_PARTY_APPS = [
+    "rest_framework",
+    "corsheaders",
+    "django_extensions",
+]
+# local apps"
+LOCAL_APPS = ["logistics", "utils"]
+
+INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
 
 MIDDLEWARE = [
     "corsheaders.middleware.CorsMiddleware", 
