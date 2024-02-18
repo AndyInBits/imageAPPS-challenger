@@ -1,0 +1,12 @@
+{% extends 'base.html' %} 
+{% load static %} 
+{% block title %} Clients {%endblock %} 
+
+{% block content %}
+<h1>Paquete del cliente : {{client.name}}</h1>
+<ul>
+  {% for paquete in packages %}
+  <li> Paquete : {{ paquete.origin_address }} - {{ paquete.destination_address }}</li>
+  {% endfor %}
+</ul>
+{% endblock %}

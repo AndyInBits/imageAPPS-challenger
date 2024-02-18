@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}
+  Confirm Delete Package
+{% endblock %}
+
+{% block content %}
+  <h2>Confirm Delete Package</h2>
+  <p>Are you sure you want to delete the package with ID {{ package.id }}?</p>
+  <form method="post">
+    {% csrf_token %}
+    <button type="submit">Delete</button>
+    <a href="{% url 'package_list' %}">Cancel</a>
+  </form>
+{% endblock %}
