@@ -1,0 +1,78 @@
+[
+    {
+      "model": "logistics.client",
+      "pk": 1,
+      "fields": {
+        "name": "Cliente1",
+        "address": "Dirección Cliente1",
+        "phone_number": "123-456-7890",
+        "created": "2023-01-01T12:00:00Z",
+      "modified": "2023-01-01T12:00:00Z"
+      }
+    },
+    {
+      "model": "logistics.client",
+      "pk": 2,
+      "fields": {
+        "name": "Cliente2",
+        "address": "Dirección Cliente2",
+        "phone_number": "987-654-3210",
+        "created": "2023-01-01T12:00:00Z",
+      "modified": "2023-01-01T12:00:00Z"
+      }
+    },
+  
+    {
+      "model": "logistics.carrier",
+      "pk": 1,
+      "fields": {
+        "name": "Transportista1",
+        "vehicle_type": "Camión",
+        "contact_number": "555-1234",
+        "created": "2023-01-01T12:00:00Z",
+      "modified": "2023-01-01T12:00:00Z"
+      }
+    },
+    {
+      "model": "logistics.carrier",
+      "pk": 2,
+      "fields": {
+        "name": "Transportista2",
+        "vehicle_type": "Furgoneta",
+        "contact_number": "555-5678",
+        "created": "2023-01-01T12:00:00Z",
+      "modified": "2023-01-01T12:00:00Z"
+      }
+    },
+  
+    {
+      "model": "logistics.package",
+      "pk": 1,
+      "fields": {
+        "weight": "2.5",
+        "dimensions": "20x30x10",
+        "origin_address": "Origen Paquete1",
+        "destination_address": "Destino Paquete1",
+        "delivery_status": "En tránsito",
+        "client": 1,
+        "carrier": 1,
+        "created": "2023-01-01T12:00:00Z",
+      "modified": "2023-01-01T12:00:00Z"
+      }
+    },
+    {
+      "model": "logistics.package",
+      "pk": 2,
+      "fields": {
+        "weight": "1.8",
+        "dimensions": "15x25x8",
+        "origin_address": "Origen Paquete2",
+        "destination_address": "Destino Paquete2",
+        "delivery_status": "Entregado",
+        "client": 2,
+        "carrier": 2,
+        "created": "2023-01-01T12:00:00Z",
+      "modified": "2023-01-01T12:00:00Z"
+      }
+    }
+  ]

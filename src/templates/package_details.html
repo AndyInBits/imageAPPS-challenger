@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}
+  Package Details
+{% endblock %}
+
+{% block content %}
+  <h2>Package Details</h2>
+  <p>Package ID: {{ package.id }}</p>
+  <p>Weight: {{ package.weight }}</p>
+  <p>Dimensions: {{ package.dimensions }}</p>
+  <!-- Agrega más detalles según sea necesario -->
+
+  <!-- Puedes incluir enlaces o botones para volver a la lista de paquetes u otras páginas -->
+  <a href="{% url 'package_list' %}">Back to Package List</a>
+{% endblock %}

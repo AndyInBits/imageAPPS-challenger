@@ -1,0 +1,14 @@
+{% extends 'base.html' %} 
+{% load static %} 
+{% block title %} Carriers {%endblock %} 
+
+{% block content %}
+
+<h2>Paquetes asinados a :  {{ carrier.name }}</h2>
+<ul>
+    {% for package in packages %}
+        <li>{{ package.origin_address }} - {{ package.destination_address }}</li>
+    {% endfor %}
+</ul>
+
+{% endblock %}

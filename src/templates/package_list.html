@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}
+  Package List
+{% endblock %}
+
+{% block content %}
+  <h2>Lista de paquetes</h2>
+  <ul>
+    {% for package in packages %}
+      <li>{{package.id }} - {{ package.origin_address }} - {{ package.destination_address }} - Cliente: {{ package.client.name }}</li>
+    {% endfor %}
+  </ul>
+{% endblock %}
