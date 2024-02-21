@@ -4,6 +4,9 @@
 
 This is a resolution of the challenge proposed by ImageApps. The challenge is about the logistics with a some clients and some carriers and packages. The goal is to find the best carrier for each package and the best package for each client.
 
+
+
+
 ## How to run
 
 To run the project, you need to have Python 3.11 or higher installed. Then, you can run the following commands:
@@ -15,6 +18,23 @@ cd imageAPPS-challenger
 
 docker-compose up --build
 ```
+
+## RNV FILE 
+
+create a .env file in the root of the project with the following content:
+
+```bash
+DJANGO_DEBUG=True
+DJANGO_ENV=development
+DJANGO_SECRET_KEY="django-insecure-jnpr=8m8h9@z1xa0o-6&j8(k!lq-dye+5p)b&aguo$!#z(mk%3"
+
+POSTGRES_USER=postgres
+POSTGRES_PASSWORD=postgres
+POSTGRES_DB=logistics
+POSTGRES_HOST=database
+POSTGRES_PORT=5432
+```
+
 
 ## Libraries
 
