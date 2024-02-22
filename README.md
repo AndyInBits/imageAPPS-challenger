@@ -19,7 +19,7 @@ cd imageAPPS-challenger
 docker-compose up --build
 ```
 
-## RNV FILE 
+## ENV FILE 
 
 create a .env file in the root of the project with the following content:
 
